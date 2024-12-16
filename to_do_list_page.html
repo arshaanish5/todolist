@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TO-DO-LIST</title>
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Navbar with Logout Button -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid d-flex justify-content-end me-5">
+			<button class="btn btn-outline-dark bg-dark text-white nav-button" onclick="window.location.href='./index.html'">
+				Log Out
+			</button>
+		</div>
+	</nav>
+
+	<!-- Responsive Table -->
+	<div class="table-responsive">
+		<table class="table" id="tabledata">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Rows will be added dynamically -->
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Button to Fetch Table Data -->
+	<div class="text-center mt-4">
+		<button type="button" id="btn" class="btn btn-dark" onclick="ajaxreq()">
+			Get Table Data
+		</button>
+	</div> 
+
+	<!-- JavaScript -->
+	<script src="./bootstrap.bundle.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>
